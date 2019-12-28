@@ -40,4 +40,4 @@ shard_matrix(X_sharded, X)
 
 XXT_sharded = gemm(pwex, X_sharded, X_sharded.T, X_sharded.bucket, 1)
 print("Numpywren result ")
-print(XXT_sharded)
+print(XXT_sharded.numpy())
