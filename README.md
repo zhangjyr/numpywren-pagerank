@@ -15,3 +15,7 @@
     - if we remove include, Lambda returns excpetion `No space left on device`
     - tried patching pywren to ignore aiobotocore when removing imports. Still requires `async_generator`. After including that again `No space left on device` (see `executor.py`, `swap.sh`)
     - **possible solution**: build our own pywren runtime with only the libraries we need
+    - **fix**: use following config for pywren:
+      `runtime:
+      s3_bucket: numpywrenpublic
+      s3_key: pywren.runtime/pywren_runtime-3.6-numpywren.tar.gz`
