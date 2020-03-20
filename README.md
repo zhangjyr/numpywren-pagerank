@@ -55,12 +55,12 @@
       ```
       mkdir lambda
       cd lambda
-      cp ~/.local/lib/python3.6/site-packages/pywren/pywren/wrenutil.py ./
-      cp ~/.local/lib/python3.6/site-packages/pywren/pywren/wrenconfig.py ./
-      cp ~/.local/lib/python3.6/site-packages/pywren/pywren/wrenhandler.py ./
-      cp ~/.local/lib/python3.6/site-packages/pywren/pywren/version.py ./
-      cp ~/.local/lib/python3.6/site-packages/pywren/pywren/jobrunner/jobrunner.py ./
-      cp ~/.local/lib/python3.6/site-packages/pywren/pywren/wren.py ./
+      cp ~/.local/lib/python3.6/site-packages/pywren/wrenutil.py ./
+      cp ~/.local/lib/python3.6/site-packages/pywren/wrenconfig.py ./
+      cp ~/.local/lib/python3.6/site-packages/pywren/wrenhandler.py ./
+      cp ~/.local/lib/python3.6/site-packages/pywren/version.py ./
+      cp ~/.local/lib/python3.6/site-packages/pywren/jobrunner/jobrunner.py ./
+      cp ~/.local/lib/python3.6/site-packages/pywren/wren.py ./
       mkdir package
       pip3.6 install --upgrade --target ./package boto3==1.12.15
       pip3.6 install --upgrade --target ./package botocore==1.15.15
