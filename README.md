@@ -54,6 +54,7 @@
    6. Manually repackage lambda function as in https://docs.aws.amazon.com/lambda/latest/dg/python-package.html . Add package boto3=1.12.15, botocore=1.15.15, aiohttp, wrapt, astor. Or execute, and upload to lambda.
       ```
       mkdir lambda
+      cd lambda
       cp ~/.local/lib/python3.6/site-packages/pywren/pywren/wrenutil.py ./
       cp ~/.local/lib/python3.6/site-packages/pywren/pywren/wrenconfig.py ./
       cp ~/.local/lib/python3.6/site-packages/pywren/pywren/wrenhandler.py ./
