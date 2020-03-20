@@ -67,7 +67,7 @@
       pip3.6 install --upgrade --target ./package aiohttp
       pip3.6 install --upgrade --target ./package wrapt
       pip3.6 install --upgrade --target ./package astor
-      cd pakcage
+      cd package
       zip -r9 ${OLDPWD}/function.zip .
       cd $OLDPWD
       zip -g function.zip *.py
